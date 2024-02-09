@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="name">Dhiraj</string>
+    <string name="my_bio">If you want to quickly try out the Gemini API, you can use curl commands to call the methods in the REST API. The examples in this tutorial show calls for each API method.
+
+The Colab uses Python code to set an environment variable and to display an image, but you don\'t need Colab to work with the REST API. You should be able to run all of the curl examples outside of Colab, without modification, Embedding is a technique used to represent information as a list of floating point numbers in an array. With Gemini, you can represent text (words, sentences, and blocks of text) in a vectorized form, making it easier to compare and contrast embeddings. For example, two texts that share a similar subject matter or sentiment should have similar embeddings, which can be identified through mathematical comparison techniques such as cosine similarity.as long as you have API_KEY set as described in the next section.</string>
+</resources>
