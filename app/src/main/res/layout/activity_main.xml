@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="bio"
+            type="com.example.myapplication2.data.Bio" />
+    </data>
+
     <androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/name" />
+         android:text="@{bio.name}" />
 
      <EditText
         android:id="@+id/enter_hobies"
@@ -33,7 +39,7 @@
         android:layout_height="wrap_content"
         android:autofillHints="@string/auto_fill_hints"
         android:ems="10"
-        android:hint="Enter hobbies"
+        android:hint="@string/enter_hobbies"
         android:inputType="text" />
 
      <Button
@@ -42,16 +48,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="addhobbies"
-        android:text="Done" />
+        android:text="@string/done" />
 
      <TextView
         android:id="@+id/hobbies_text"
         style="@style/general_style"
+         android:text="@{bio.hobbies}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"
-        android:text="TextView" />
+         />
 
      <ScrollView
         android:layout_width="match_parent"
